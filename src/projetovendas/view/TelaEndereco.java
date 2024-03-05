@@ -78,8 +78,19 @@ public class TelaEndereco extends javax.swing.JFrame {
         jLabel2.setText("Cidade");
 
         jCCidade.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jCCidade.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCCidadeActionPerformed(evt);
+            }
+        });
 
         jLabel3.setText("Bairro");
+
+        jTbairro.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTbairroActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -148,6 +159,14 @@ public class TelaEndereco extends javax.swing.JFrame {
     private void jTLogradouroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTLogradouroActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTLogradouroActionPerformed
+
+    private void jCCidadeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCCidadeActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jCCidadeActionPerformed
+
+    private void jTbairroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTbairroActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTbairroActionPerformed
 
     /**
      * @param args the command line arguments

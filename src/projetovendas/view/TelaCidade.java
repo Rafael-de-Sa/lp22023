@@ -41,7 +41,7 @@ public class TelaCidade extends javax.swing.JFrame {
         jBCadastrar = new javax.swing.JButton();
         jBCancelar = new javax.swing.JButton();
         jBExcluir = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
+        jBAlterar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -76,7 +76,12 @@ public class TelaCidade extends javax.swing.JFrame {
             }
         });
 
-        jButton4.setText("Alterar");
+        jBAlterar.setText("Alterar");
+        jBAlterar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBAlterarActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -99,7 +104,7 @@ public class TelaCidade extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addComponent(jBExcluir)
                         .addGap(18, 18, 18)
-                        .addComponent(jButton4)
+                        .addComponent(jBAlterar)
                         .addGap(20, 20, 20))))
         );
         layout.setVerticalGroup(
@@ -117,7 +122,7 @@ public class TelaCidade extends javax.swing.JFrame {
                     .addComponent(jBCadastrar)
                     .addComponent(jBCancelar)
                     .addComponent(jBExcluir)
-                    .addComponent(jButton4))
+                    .addComponent(jBAlterar))
                 .addGap(27, 27, 27))
         );
 
@@ -147,6 +152,10 @@ public class TelaCidade extends javax.swing.JFrame {
     private void jBExcluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBExcluirActionPerformed
         exlcuir();
     }//GEN-LAST:event_jBExcluirActionPerformed
+
+    private void jBAlterarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBAlterarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jBAlterarActionPerformed
    
     private void limpar(){
        jTFCodigoIbge.setText("");
@@ -193,10 +202,10 @@ public class TelaCidade extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jBAlterar;
     private javax.swing.JButton jBCadastrar;
     private javax.swing.JButton jBCancelar;
     private javax.swing.JButton jBExcluir;
-    private javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JTextField jTFCodigoIbge;
